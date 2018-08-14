@@ -1,0 +1,8 @@
+author: Michel Anderson Lutz Teixeira
+author_url: https://twitter.com/michel_lutz
+github_url: https://github.com/micheltlutz/MLQuestionCheck
+root_url: https://micheltlutz.github.io/MLQuestionCheck/
+module: MLQuestionCheck
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'MLQuestionCheck.xcworkspace', -scheme, 'MLQuestionCheck-iOS']
