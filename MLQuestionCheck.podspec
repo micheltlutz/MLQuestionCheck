@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'MLQuestionCheck'
- s.version = '0.0.1'
+ s.version = '0.0.2'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'A check component for Swift projects'
  s.homepage = 'http://micheltlutz.me'
