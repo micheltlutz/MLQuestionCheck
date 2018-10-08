@@ -25,11 +25,13 @@ import UIKit
 open class MLQuestionCheck: UIView {
     static let name = "MLQuestionCheck"
     private var checkButton = MLQuestionCheckButton()
-    open let labelQuestion: UILabel = {
+    public let labelQuestion: UILabel = {
         let labelQuestion = UILabel(frame: .zero)
         labelQuestion.translatesAutoresizingMaskIntoConstraints = false
         labelQuestion.text = ""
         labelQuestion.textColor = UIColor(hex: "333333")
+        labelQuestion.numberOfLines = 0
+        labelQuestion.lineBreakMode = .byWordWrapping
         return labelQuestion
     }()
     private var isChecked = false
@@ -79,7 +81,8 @@ extension MLQuestionCheck: ViewConfiguration {
         heightAnchor.constraint(equalToConstant: 36).isActive = true
         checkButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
         checkButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        labelQuestion.leadingAnchor.constraint(equalTo: checkButton.trailingAnchor, constant: 16).isActive = true
+        labelQuestion.leadingAnchor.constraint(equalTo: checkButton.trailingAnchor,
+                                               constant: 4).isActive = true
         labelQuestion.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 16).isActive = true
         labelQuestion.centerYAnchor.constraint(equalTo: checkButton.centerYAnchor).isActive = true
     }
