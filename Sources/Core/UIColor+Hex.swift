@@ -23,6 +23,13 @@
 import UIKit
 
 extension UIColor {
+    /**
+     UIColor Extension: Create a convenience init to use Hex value # not required
+     ### Usage Example: ###
+     ````
+     let color = UIColor(hex: "99cc00")
+     ````
+     */
     convenience init(hex: String) {
         let hexN = hex.replacingOccurrences(of: "#", with: "", options: .literal, range: nil)
         let scanner = Scanner(string: hexN)

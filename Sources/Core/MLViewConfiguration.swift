@@ -22,14 +22,47 @@
 
 import Foundation
 
-protocol ViewConfiguration: class {
+/**
+ :nodoc:
+ */
+protocol MLViewConfiguration: class {
     func setupConstraints()
     func buildViewHierarchy()
     func configureViews()
     func setupViewConfiguration()
 }
 
-extension ViewConfiguration {
+
+/*
+ Extension MLViewConfiguration form Any View
+
+ Call setupViewConfiguration() to execute configurations.
+
+ ### Usage Example: ###
+ ````
+ class MLQuestionCheck {
+    private func samefunctionLikeViewDid() {
+        setupViewConfiguration()
+    }
+ }
+
+ extension MLQuestionCheck: MLViewConfiguration {
+    func setupConstraints() {
+        checkButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        ///....
+    }
+
+    func buildViewHierarchy() {
+        addSubview(checkButton)
+    }
+
+    func configureViews() {
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+ }
+ ````
+ */
+extension MLViewConfiguration {
     func setupViewConfiguration() {
         buildViewHierarchy()
         setupConstraints()
