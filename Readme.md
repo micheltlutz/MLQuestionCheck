@@ -41,7 +41,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLQuestionCheck', '~> 0.0.2'
+pod 'MLQuestionCheck', '~> 1.0'
 ```
 
 Then, run the following command:
@@ -67,7 +67,7 @@ $ brew install carthage
 To integrate MLQuestionCheck into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLQuestionCheck" ~> 0.0.2
+github "micheltlutz/MLQuestionCheck" ~> 1.0
 ```
 
 </details>
@@ -85,7 +85,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLQuestionCheck",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLQuestionCheck.git", .upToNextMajor(from: "0.0.2"))
+        .package(url: "https://github.com/micheltlutz/MLQuestionCheck.git", .upToNextMajor(from: "1.0"))
     ],
     targets: [
         .target(name: "HelloMLQuestionCheck", dependencies: ["MLQuestionCheck"])
@@ -172,10 +172,40 @@ question1.checkedImageName = "new image name"
 question1.setupCheck() // to change configuration buttons
 
 ```
+### Or Custom Font width and Runtime Change Text
+
+```swift
+let questionCheckCustom = MLQuestionCheck(question: "I'm iOS Developer?")
+questionCheckCustom.widthQuestion = UIScreen.main.bounds.width
+questionCheckCustom.font = UIFont.boldSystemFont(ofSize: 17)
+questionCheckCustom.didChangeState = { isChecked in
+	print("questionCheck.isChecked: \(isChecked)")
+}
+
+Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (_) in
+	self.questionCheckCustom.question = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+}
+```
+
+## Docs
+
+See [Documentation](http://htmlpreview.github.io/?https://github.com/micheltlutz/MLQuestionCheck/blob/develop/docs/index.html)
+
+MLQuestionCheck Docs (81% documented)
+
+<p align="center">
+ <img width="350" height="190"src="http://micheltlutz.me/imagens/projetos/MLQuestionCheck/IMG_4647.jpg"> 
+
+</p>
 
 ## Contributing
 
 Issues and pull requests are welcome!
+
+## Todo
+
+- [ ] Migrate to Swift 4.2
+- [ ] 100% documented
 
 ## Author
 

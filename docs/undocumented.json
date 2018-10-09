@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheck.swift",
+      "line": 207,
+      "symbol": "MLQuestionCheck.updateHeightContraint()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "line": null,
+      "symbol": "MLQuestionCheckButton",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "line": 29,
+      "symbol": "MLQuestionButtonState.checked",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "line": 29,
+      "symbol": "MLQuestionButtonState.unChecked",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "line": 32,
+      "symbol": "MLQuestionCheckButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "line": 66,
+      "symbol": "MLViewConfiguration.setupViewConfiguration()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "line": 72,
+      "symbol": "MLViewConfiguration.configureViews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/michel/DeviOS/MLPods/MLQuestionCheck"
+}

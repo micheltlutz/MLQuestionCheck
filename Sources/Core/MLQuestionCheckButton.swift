@@ -22,29 +22,55 @@
 
 import UIKit
 
+/**
+ Enum: String define a Button states checked, unChecked
+ */
 public enum MLQuestionButtonState: String {
     case checked, unChecked
 }
 
 open class MLQuestionCheckButton: UIButton {
+    /**
+    Handler called when check component
+    */
     open var didCheck: (() -> Void)?
-    open var didUnChack: (() -> Void)?
+    /**
+     Handler called when uncheck component
+     */
+    open var didUncheck: (() -> Void)?
+    /**
+     This var contains the images names uncheckedImageName default value ***questionUnchecked*** just have a file in Assets with this name
+     */
     open var uncheckedImageName = "questionUnchecked" {
         didSet {
             setupImages()
         }
     }
+    /**
+     This var contains the images names checkedImageName default value ***questionChecked*** just have a file in Assets with this name
+     */
     open var checkedImageName = "questionChecked" {
         didSet {
             setupImages()
         }
     }
-    private let sizeIcon = CGFloat(36)
+    /**
+     Contains a Size Icon default value CGFloat(36)
+     */
+    open var sizeIcon = CGFloat(36)
+    /**
+     Contains a viewState
+
+     - SeeAlso: `MLQuestionButtonState`
+     */
     open var viewState: MLQuestionButtonState = .unChecked {
         didSet {
             setupImages()
         }
     }
+    /**
+     Init Component
+     */
     convenience init() {
         self.init(frame: .zero)
         addTarget(self, action: #selector(touchUpInsideButton), for: .touchUpInside)
@@ -53,6 +79,9 @@ open class MLQuestionCheckButton: UIButton {
         widthAnchor.constraint(equalToConstant: sizeIcon).isActive = true
         heightAnchor.constraint(equalToConstant: sizeIcon).isActive = true
     }
+    /**
+     :nodoc:
+     */
     internal func setupImages() {
         if viewState == .unChecked {
             setImage(UIImage(named: uncheckedImageName), for: .normal)
@@ -60,21 +89,28 @@ open class MLQuestionCheckButton: UIButton {
             setImage(UIImage(named: checkedImageName), for: .normal)
         }
     }
+    /**
+     :nodoc:
+     */
     override public init(frame: CGRect) {
         super.init(frame: frame)
     }
+    /**
+     :nodoc:
+     */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }
 
 extension MLQuestionCheckButton {
+    /**
+     Target #selector for Button
+     */
     @objc fileprivate func touchUpInsideButton() {
         if viewState == .checked {
-            didUnChack?()
-            //viewState = .unChecked
+            didUncheck?()
         } else {
-            //viewState = .checked
             didCheck?()
         }
     }
