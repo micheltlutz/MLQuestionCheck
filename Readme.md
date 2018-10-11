@@ -12,7 +12,7 @@
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/MLQuestionCheck.svg)](https://cocoapods.org/pods/MLQuestionCheck)
 
 [![Travis](https://img.shields.io/travis/micheltlutz/MLQuestionCheck/master.svg)](https://travis-ci.org/micheltlutz/MLQuestionCheck/branches)
-[![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
+
 
 A check component for Swift projects
 
@@ -208,12 +208,17 @@ Issues and pull requests are welcome!
 
 ## Todo
 
-- [ ] Migrate to Swift 4.2
+- [x] Migrate to Swift 4.2 (Thanks [@maclacerda](https://github.com/maclacerda))
 - [ ] 100% documented
 
 ## Author
 
 Michel Anderson Lutz Teixeira [@michel_lutz](https://twitter.com/michel_lutz)
+
+## Contributions
+
+<a href="https://github.com/maclacerda"><img src="https://avatars.githubusercontent.com/u/4759987?v=3" title="maclacerda" width="80" height="80"></a>
+
 
 ## License
 
