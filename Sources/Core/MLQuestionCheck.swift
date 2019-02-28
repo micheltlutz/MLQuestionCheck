@@ -223,7 +223,8 @@ extension MLQuestionCheck: MLViewConfiguration {
     private func updateHeightQuestion() {
         var fontToResize = font
         if isChecked { fontToResize = fontChecked }
-        heightQuestion = question.heightWithConstrainedWidth(width: (widthQuestion - checkButton.sizeIcon - 16), font: fontToResize)
+        heightQuestion = question.heightWithConstrainedWidth(width: (widthQuestion - checkButton.sizeIcon - 16),
+                                                             font: fontToResize)
     }
     /**
      Update height question constraint
