@@ -2,6 +2,16 @@
 
 -----
 
+## [1.1.0 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.1.0) (2019-02-28)
+
+#### Add
+
+* New property to set checked font ```fontChecked: UIFont ```
+
+* Fix initial state checked
+
+-----
+
 ## [1.0.1 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.0.1) (2018-10-10)
 
 #### Add

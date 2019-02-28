@@ -13,7 +13,7 @@
     <a title="MLQuestionCheck  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">MLQuestionCheck Docs</a> (81% documented)</p>
+        <p><a href="index.html">MLQuestionCheck Docs</a> (83% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -49,13 +49,18 @@
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions/MLViewConfiguration.html">MLViewConfiguration</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Extensions/String.html">String</a>
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/UIColor.html">UIColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/MLViewConfiguration.html">MLViewConfiguration</a>
               </li>
             </ul>
           </li>
@@ -67,6 +72,10 @@
             
             <h1 id='mlquestioncheck' class='heading'>MLQuestionCheck</h1>
 
+<p align="center">
+ <img width="300" height="300"src="http://micheltlutz.me/imagens/projetos/MLQuestionCheck/logo.png">
+</p>
+
 <p><a href="https://cocoapods.org/pods/MLQuestionCheck"><img src="https://img.shields.io/cocoapods/p/MLQuestionCheck.svg" alt="Platforms"></a>
 <a href="https://raw.githubusercontent.com/micheltlutz/MLQuestionCheck/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/MLQuestionCheck.svg" alt="License"></a></p>
 
@@ -74,8 +83,7 @@
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
 <a href="https://cocoapods.org/pods/MLQuestionCheck"><img src="https://img.shields.io/cocoapods/v/MLQuestionCheck.svg" alt="CocoaPods compatible"></a></p>
 
-<p><a href="https://travis-ci.org/micheltlutz/MLQuestionCheck/branches"><img src="https://img.shields.io/travis/micheltlutz/MLQuestionCheck/master.svg" alt="Travis"></a>
-<a href="http://github.com/RahulKatariya/SwiftFrameworkTemplate"><img src="https://img.shields.io/badge/SwiftFramework-Template-red.svg" alt="SwiftFrameworkTemplate"></a></p>
+<p><a href="https://travis-ci.org/micheltlutz/MLQuestionCheck/branches"><img src="https://img.shields.io/travis/micheltlutz/MLQuestionCheck/master.svg" alt="Travis"></a></p>
 
 <p>A check component for Swift projects</p>
 
@@ -110,7 +118,7 @@ source &lsquo;https://github.com/CocoaPods/Specs.git&rsquo;
 platform :ios, &lsquo;10.0&rsquo;
 use_frameworks!
 
-pod &lsquo;MLQuestionCheck&rsquo;, &lsquo;~> 1.0&rsquo;
+pod &lsquo;MLQuestionCheck&rsquo;, &lsquo;~> 1.1.0&rsquo;
 &rdquo;`
 
 Then, run the following command:
@@ -136,7 +144,7 @@ $ brew install carthage
 To integrate MLQuestionCheck into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 &ldquo;`ogdl
-github &quot;micheltlutz/MLQuestionCheck&rdquo; ~> 1.0
+github &quot;micheltlutz/MLQuestionCheck&rdquo; ~> 1.1.0
 &ldquo;`
 
 </details>
@@ -154,7 +162,7 @@ import PackageDescription
 let package = Package(
     name: &ldquo;HelloMLQuestionCheck&rdquo;,
     dependencies: [
-        .package(url: &ldquo;https://github.com/micheltlutz/MLQuestionCheck.git&rdquo;, .upToNextMajor(from: &ldquo;1.0&rdquo;))
+        .package(url: &ldquo;https://github.com/micheltlutz/MLQuestionCheck.git&rdquo;, .upToNextMajor(from: &ldquo;1.1.0&rdquo;))
     ],
     targets: [
         .target(name: &ldquo;HelloMLQuestionCheck&rdquo;, dependencies: [&ldquo;MLQuestionCheck&rdquo;])
@@ -240,6 +248,7 @@ $ git submodule update &ndash;init &ndash;recursive
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">questionCheckCustom</span> <span class="o">=</span> <span class="kt">MLQuestionCheck</span><span class="p">(</span><span class="nv">question</span><span class="p">:</span> <span class="s">"I'm iOS Developer?"</span><span class="p">)</span>
 <span class="n">questionCheckCustom</span><span class="o">.</span><span class="n">widthQuestion</span> <span class="o">=</span> <span class="kt">UIScreen</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">bounds</span><span class="o">.</span><span class="n">width</span>
 <span class="n">questionCheckCustom</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="o">.</span><span class="nf">boldSystemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">17</span><span class="p">)</span>
+<span class="n">questionCheckCustom</span><span class="o">.</span><span class="n">fontChecked</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="o">.</span><span class="nf">boldSystemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>
 <span class="n">questionCheckCustom</span><span class="o">.</span><span class="n">didChangeState</span> <span class="o">=</span> <span class="p">{</span> <span class="n">isChecked</span> <span class="k">in</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"questionCheck.isChecked: </span><span class="se">\(</span><span class="n">isChecked</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
 <span class="p">}</span>
@@ -248,12 +257,31 @@ $ git submodule update &ndash;init &ndash;recursive
     <span class="k">self</span><span class="o">.</span><span class="n">questionCheckCustom</span><span class="o">.</span><span class="n">question</span> <span class="o">=</span> <span class="s">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</span>
 <span class="p">}</span>
 </code></pre>
+<h2 id='docs' class='heading'>Docs</h2>
+
+<p>See <a href="http://htmlpreview.github.io/?https://github.com/micheltlutz/MLQuestionCheck/blob/develop/docs/index.html">Documentation</a></p>
+
+<p>MLQuestionCheck Docs (81% documented)</p>
+
+<p align="center">
+ <img width="350" height="190"src="http://micheltlutz.me/imagens/projetos/MLQuestionCheck/IMG_4647.jpg"> 
+
+</p>
 <h2 id='contributing' class='heading'>Contributing</h2>
 
 <p>Issues and pull requests are welcome!</p>
+<h2 id='todo' class='heading'>Todo</h2>
+
+<ul>
+<li>[x] Migrate to Swift 4.2 (Thanks <a href="https://github.com/maclacerda">@maclacerda</a>)</li>
+<li>[ ] 100% documented</li>
+</ul>
 <h2 id='author' class='heading'>Author</h2>
 
 <p>Michel Anderson Lutz Teixeira <a href="https://twitter.com/michel_lutz">@michel_lutz</a></p>
+<h2 id='contributions' class='heading'>Contributions</h2>
+
+<p><a href="https://github.com/maclacerda"><img src="https://avatars.githubusercontent.com/u/4759987?v=3" title="maclacerda" width="80" height="80"></a></p>
 <h2 id='license' class='heading'>License</h2>
 
 <p>MLQuestionCheck is released under the MIT license. See <a href="https://github.com/micheltlutz/MLQuestionCheck/blob/master/LICENSE">LICENSE</a> for details.</p>
@@ -261,7 +289,7 @@ $ git submodule update &ndash;init &ndash;recursive
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="http://micheltlutz.me" target="_blank" rel="external">Michel Anderson Lutz Teixeira</a>. All rights reserved. (Last updated: 2018-10-09)</p>
+          <p>&copy; 2019 <a class="link" href="http://micheltlutz.me" target="_blank" rel="external">Michel Anderson Lutz Teixeira</a>. All rights reserved. (Last updated: 2019-02-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

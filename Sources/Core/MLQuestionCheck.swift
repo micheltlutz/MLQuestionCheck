@@ -28,7 +28,7 @@ import UIKit
  */
 open class MLQuestionCheck: UIView {
     /**
-     :nodoc:
+     Component name name
      */
     static let name = "MLQuestionCheck"
 
@@ -69,6 +69,15 @@ open class MLQuestionCheck: UIView {
     open var font: UIFont = UIFont.systemFont(ofSize: 20, weight: .light) {
         didSet {
             labelQuestion.font = font
+            updateHeightContraint()
+        }
+    }
+    /**
+     Define a font for Label question when checked
+     */
+    open var fontChecked: UIFont = UIFont.systemFont(ofSize: 20, weight: .bold) {
+        didSet {
+            labelQuestion.font = fontChecked
             updateHeightContraint()
         }
     }
@@ -135,9 +144,16 @@ open class MLQuestionCheck: UIView {
         self.init(frame: .zero)
         self.question = question
         self.labelQuestion.text = question
-        self.labelQuestion.font = font
-        self.isChecked = checked!
         self.setupButtonActions()
+        self.setupCheck()
+        self.isChecked = checked!
+        if checked! {
+            self.labelQuestion.font = fontChecked
+            self.checkButton.viewState = .checked
+        } else {
+            self.labelQuestion.font = font
+            self.checkButton.viewState = .unChecked
+        }
         self.setupViewConfiguration()
     }
     /**
@@ -155,28 +171,32 @@ open class MLQuestionCheck: UIView {
         }
     }
     /**
-     :nodoc:
+     This method setup button actions for check and uncheck
      */
     private func setupButtonActions() {
         checkButton.didCheck = { [weak self] in
-            self?.isChecked = true
-            self?.checkButton.viewState = .checked
-            self?.didChangeState?(true)
+            guard let self = self else { return }
+            self.isChecked = true
+            self.checkButton.viewState = .checked
+            self.labelQuestion.font = self.fontChecked
+            self.didChangeState?(true)
         }
         checkButton.didUncheck = { [weak self] in
-            self?.isChecked = false
-            self?.checkButton.viewState = .unChecked
-            self?.didChangeState?(false)
+            guard let self = self else { return }
+            self.isChecked = false
+            self.checkButton.viewState = .unChecked
+            self.labelQuestion.font = self.font
+            self.didChangeState?(false)
         }
     }
     /**
-     :nodoc:
+     Default public initializer
      */
     override public init(frame: CGRect) {
         super.init(frame: frame)
     }
     /**
-     :nodoc:
+      Default required initializer
      */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -189,7 +209,7 @@ open class MLQuestionCheck: UIView {
  */
 extension MLQuestionCheck: MLViewConfiguration {
     /**
-     :nodoc:
+     Update width question constraint
      */
     private func updateWidthConstraints() {
         if let unwrappedWidthConstraint = widthConstraint {
@@ -198,12 +218,16 @@ extension MLQuestionCheck: MLViewConfiguration {
         updateHeightContraint()
     }
     /**
-     :nodoc:
+     Update height question
      */
     private func updateHeightQuestion() {
-        heightQuestion = question.heightWithConstrainedWidth(width: (widthQuestion - checkButton.sizeIcon - 16), font: font)
+        var fontToResize = font
+        if isChecked { fontToResize = fontChecked }
+        heightQuestion = question.heightWithConstrainedWidth(width: (widthQuestion - checkButton.sizeIcon - 16), font: fontToResize)
     }
-
+    /**
+     Update height question constraint
+     */
     private func updateHeightContraint() {
         updateHeightQuestion()
         if heightQuestion < minHeightQuestion { heightQuestion = minHeightQuestion }
@@ -212,7 +236,7 @@ extension MLQuestionCheck: MLViewConfiguration {
         }
     }
     /**
-     :nodoc:
+     Setup constraints component
      */
     func setupConstraints() {
         updateHeightQuestion()
@@ -229,14 +253,14 @@ extension MLQuestionCheck: MLViewConfiguration {
         labelQuestion.centerYAnchor.constraint(equalTo: checkButton.centerYAnchor).isActive = true
     }
     /**
-     :nodoc:
+     Add Subview to superview creating view hierarchy
      */
     func buildViewHierarchy() {
         addSubview(checkButton)
         addSubview(labelQuestion)
     }
     /**
-     :nodoc:
+     Default configuration view
      */
     func configureViews() {
         translatesAutoresizingMaskIntoConstraints = false

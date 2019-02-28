@@ -80,7 +80,7 @@ open class MLQuestionCheckButton: UIButton {
         heightAnchor.constraint(equalToConstant: sizeIcon).isActive = true
     }
     /**
-     :nodoc:
+     Setup images setting image names
      */
     internal func setupImages() {
         if viewState == .unChecked {
@@ -90,13 +90,13 @@ open class MLQuestionCheckButton: UIButton {
         }
     }
     /**
-     :nodoc:
+     Default public initializer
      */
     override public init(frame: CGRect) {
         super.init(frame: frame)
     }
     /**
-     :nodoc:
+     Default required initializer
      */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
