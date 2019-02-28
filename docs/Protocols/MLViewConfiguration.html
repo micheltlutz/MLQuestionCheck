@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MLQuestionButtonState Enumeration Reference</title>
+    <title>MLViewConfiguration Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/MLQuestionButtonState" class="dashAnchor"></a>
-    <a title="MLQuestionButtonState Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Protocol/MLViewConfiguration" class="dashAnchor"></a>
+    <a title="MLViewConfiguration Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">MLQuestionCheck Docs</a> (83% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">MLQuestionCheck Reference</a>
         <img id="carat" src="../img/carat.png" />
-        MLQuestionButtonState Enumeration Reference
+        MLViewConfiguration Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -70,14 +70,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>MLQuestionButtonState</h1>
+            <h1>MLViewConfiguration</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MLQuestionButtonState</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MLViewConfiguration</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Enum: String define a Button states checked, unChecked</p>
+            <p>Protocol MLViewConfiguration</p>
 
           </section>
           <section class="section task-group-section">
@@ -86,9 +86,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15MLQuestionCheck0A11ButtonStateO7checkedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/checked" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15MLQuestionCheck0A11ButtonStateO7checkedyA2CmF">checked</a>
+                    <a name="/s:15MLQuestionCheck19MLViewConfigurationP16setupConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15MLQuestionCheck19MLViewConfigurationP16setupConstraintsyyF">setupConstraints()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -103,7 +103,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">checked</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setupConstraints</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -113,9 +113,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15MLQuestionCheck0A11ButtonStateO9unCheckedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/unChecked" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15MLQuestionCheck0A11ButtonStateO9unCheckedyA2CmF">unChecked</a>
+                    <a name="/s:15MLQuestionCheck19MLViewConfigurationP18buildViewHierarchyyyF"></a>
+                    <a name="//apple_ref/swift/Method/buildViewHierarchy()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15MLQuestionCheck19MLViewConfigurationP18buildViewHierarchyyyF">buildViewHierarchy()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -130,7 +130,77 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unChecked</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">buildViewHierarchy</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15MLQuestionCheck19MLViewConfigurationP14configureViewsyyF"></a>
+                    <a name="//apple_ref/swift/Method/configureViews()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15MLQuestionCheck19MLViewConfigurationP14configureViewsyyF">configureViews()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Default configuration view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureViews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15MLQuestionCheck19MLViewConfigurationP09setupViewD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/setupViewConfiguration()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15MLQuestionCheck19MLViewConfigurationP09setupViewD0yyF">setupViewConfiguration()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setupViewConfiguration</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

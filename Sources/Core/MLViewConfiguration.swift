@@ -23,7 +23,7 @@
 import Foundation
 
 /**
- :nodoc:
+ Protocol MLViewConfiguration
  */
 protocol MLViewConfiguration: class {
     func setupConstraints()
@@ -68,7 +68,9 @@ extension MLViewConfiguration {
         setupConstraints()
         configureViews()
     }
-    
+    /**
+     Default configuration view
+     */
     func configureViews() {
     }
 }
