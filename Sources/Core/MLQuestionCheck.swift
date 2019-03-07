@@ -66,7 +66,7 @@ open class MLQuestionCheck: UIView {
     /**
      Define a font for Label question
      */
-    open var font: UIFont = UIFont.systemFont(ofSize: 20, weight: .light) {
+    open var font: UIFont = UIFont.systemFont(ofSize: 10, weight: .light) {
         didSet {
             labelQuestion.font = font
             updateHeightContraint()
@@ -75,7 +75,7 @@ open class MLQuestionCheck: UIView {
     /**
      Define a font for Label question when checked
      */
-    open var fontChecked: UIFont = UIFont.systemFont(ofSize: 20, weight: .bold) {
+    open var fontChecked: UIFont = UIFont.systemFont(ofSize: 30, weight: .bold) {
         didSet {
             labelQuestion.font = fontChecked
             updateHeightContraint()
@@ -144,8 +144,6 @@ open class MLQuestionCheck: UIView {
         self.init(frame: .zero)
         self.question = question
         self.labelQuestion.text = question
-        self.setupButtonActions()
-        self.setupCheck()
         self.isChecked = checked!
         if checked! {
             self.labelQuestion.font = fontChecked
@@ -154,6 +152,8 @@ open class MLQuestionCheck: UIView {
             self.labelQuestion.font = font
             self.checkButton.viewState = .unChecked
         }
+        self.setupButtonActions()
+        self.setupCheck()
         self.setupViewConfiguration()
     }
     /**
@@ -165,7 +165,6 @@ open class MLQuestionCheck: UIView {
         if let uncheckedImageName = uncheckedImageName {
             checkButton.uncheckedImageName = uncheckedImageName
         }
-        
         if let checkedImageName = checkedImageName {
             checkButton.checkedImageName = checkedImageName
         }
@@ -196,7 +195,7 @@ open class MLQuestionCheck: UIView {
         super.init(frame: frame)
     }
     /**
-      Default required initializer
+     Default required initializer
      */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -204,8 +203,8 @@ open class MLQuestionCheck: UIView {
 }
 /**
  Implementing MLViewConfiguration
- 
-- SeeAlso: `MLViewConfiguration`
+
+ - SeeAlso: `MLViewConfiguration`
  */
 extension MLQuestionCheck: MLViewConfiguration {
     /**
@@ -221,8 +220,13 @@ extension MLQuestionCheck: MLViewConfiguration {
      Update height question
      */
     private func updateHeightQuestion() {
-        var fontToResize = font
-        if isChecked { fontToResize = fontChecked }
+        var fontToResize: UIFont!
+        if isChecked {
+            fontToResize = fontChecked
+        } else {
+            fontToResize = font
+        }
+        labelQuestion.font = fontToResize
         heightQuestion = question.heightWithConstrainedWidth(width: (widthQuestion - checkButton.sizeIcon - 16),
                                                              font: fontToResize)
     }

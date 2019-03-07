@@ -2,6 +2,16 @@
 
 -----
 
+## [1.1.1 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.1.1) (2019-03-07)
+
+#### Fix
+
+* Fix initial state checked font not default
+
+
+
+-----
+
 ## [1.1.0 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.1.0) (2019-02-28)
 
 #### Add
