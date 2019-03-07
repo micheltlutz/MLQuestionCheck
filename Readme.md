@@ -45,7 +45,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLQuestionCheck', '~> 1.1.0'
+pod 'MLQuestionCheck', '~> 1.1.1'
 ```
 
 Then, run the following command:
@@ -71,7 +71,7 @@ $ brew install carthage
 To integrate MLQuestionCheck into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLQuestionCheck" ~> 1.1.0
+github "micheltlutz/MLQuestionCheck" ~> 1.1.1
 ```
 
 </details>
@@ -89,7 +89,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLQuestionCheck",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLQuestionCheck.git", .upToNextMajor(from: "1.1.0"))
+        .package(url: "https://github.com/micheltlutz/MLQuestionCheck.git", .upToNextMajor(from: "1.1.1"))
     ],
     targets: [
         .target(name: "HelloMLQuestionCheck", dependencies: ["MLQuestionCheck"])
@@ -196,7 +196,7 @@ Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (_) in
 
 See [Documentation](http://htmlpreview.github.io/?https://github.com/micheltlutz/MLQuestionCheck/blob/develop/docs/index.html)
 
-MLQuestionCheck Docs (81% documented)
+MLQuestionCheck Docs (83% documented)
 
 <p align="center">
  <img width="350" height="190"src="http://micheltlutz.me/imagens/projetos/MLQuestionCheck/IMG_4647.jpg"> 

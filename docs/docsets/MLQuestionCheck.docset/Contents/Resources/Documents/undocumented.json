@@ -1,13 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheck.swift",
-      "line": 207,
-      "symbol": "MLQuestionCheck.updateHeightContraint()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
       "line": null,
       "symbol": "MLQuestionCheckButton",
@@ -37,15 +30,36 @@
     },
     {
       "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
-      "line": 66,
+      "line": 29,
+      "symbol": "MLViewConfiguration.setupConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "line": 30,
+      "symbol": "MLViewConfiguration.buildViewHierarchy()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "line": 31,
+      "symbol": "MLViewConfiguration.configureViews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "line": 32,
       "symbol": "MLViewConfiguration.setupViewConfiguration()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
-      "line": 72,
-      "symbol": "MLViewConfiguration.configureViews()",
+      "line": 66,
+      "symbol": "MLViewConfiguration.setupViewConfiguration()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
