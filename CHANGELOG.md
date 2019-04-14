@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.2 - Swift 5](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.1.2) (2019-04-14)
+
+#### Add
+
+* Support to Swift 5
+
+
 -----
 
 ## [1.1.1 - Swift 4.2](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.1.1) (2019-03-07)
@@ -7,7 +14,6 @@
 #### Fix
 
 * Fix initial state checked font not default
-
 
 
 -----
