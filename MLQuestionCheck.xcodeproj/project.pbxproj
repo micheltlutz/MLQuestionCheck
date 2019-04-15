@@ -23,6 +23,7 @@
 		35B742301F82A5E000829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422E1F82A5E000829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742311F82A5EC00829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422D1F82A5DF00829B21 /* Nimble.framework */; };
 		35B742321F82A5EC00829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422E1F82A5E000829B21 /* Quick.framework */; };
+		D04B45AD2264119100056146 /* String+heightWithConstrainedWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D061704C216CD85F005849CA /* String+heightWithConstrainedWidth.swift */; };
 		D061704D216CD860005849CA /* String+heightWithConstrainedWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D061704C216CD85F005849CA /* String+heightWithConstrainedWidth.swift */; };
 		D0AC0421212304AB002584B2 /* MLViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC0420212304AB002584B2 /* MLViewConfiguration.swift */; };
 		D0AC0422212304AB002584B2 /* MLViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AC0420212304AB002584B2 /* MLViewConfiguration.swift */; };
@@ -420,6 +421,7 @@
 			files = (
 				359649051FB18CC000FC7ADC /* MLQuestionCheck.swift in Sources */,
 				D0AC0422212304AB002584B2 /* MLViewConfiguration.swift in Sources */,
+				D04B45AD2264119100056146 /* String+heightWithConstrainedWidth.swift in Sources */,
 				D0AC042E212304E5002584B2 /* MLQuestionCheckButton.swift in Sources */,
 				D0AC042B212304CB002584B2 /* UIColor+Hex.swift in Sources */,
 			);
