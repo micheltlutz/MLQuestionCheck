@@ -23,8 +23,8 @@ A check component for Swift projects
 
 ## Requirements
 
-- iOS 10.0+ / tvOS 9.0+ 
-- Xcode 9.0+
+- iOS 10.0+ / tvOS 12.0+ 
+- Xcode 10.0+
 
 ## Installation
 
@@ -45,7 +45,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-pod 'MLQuestionCheck', '~> 1.1.1'
+pod 'MLQuestionCheck', '~> 1.1.3'
 ```
 
 Then, run the following command:
@@ -71,7 +71,7 @@ $ brew install carthage
 To integrate MLQuestionCheck into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLQuestionCheck" ~> 1.1.1
+github "micheltlutz/MLQuestionCheck" ~> 1.1.3
 ```
 
 </details>
@@ -89,7 +89,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLQuestionCheck",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLQuestionCheck.git", .upToNextMajor(from: "1.1.1"))
+        .package(url: "https://github.com/micheltlutz/MLQuestionCheck.git", .upToNextMajor(from: "1.1.3"))
     ],
     targets: [
         .target(name: "HelloMLQuestionCheck", dependencies: ["MLQuestionCheck"])
@@ -196,7 +196,7 @@ Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (_) in
 
 See [Documentation](http://htmlpreview.github.io/?https://github.com/micheltlutz/MLQuestionCheck/blob/develop/docs/index.html)
 
-MLQuestionCheck Docs (83% documented)
+MLQuestionCheck Docs (76% documented)
 
 <p align="center">
  <img width="350" height="190"src="http://micheltlutz.me/imagens/projetos/MLQuestionCheck/IMG_4647.jpg"> 
