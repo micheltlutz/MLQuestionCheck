@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.3 - Swift 5](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.1.3) (2019-06-21)
+
+#### Add
+
+* Touch area in all component
+
+
 ## [1.1.2 - Swift 5](https://github.com/micheltlutz/MLAudioPlayer/releases/tag/v1.1.2) (2019-04-14)
 
 #### Add

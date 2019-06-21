@@ -154,7 +154,20 @@ open class MLQuestionCheck: UIView {
         }
         self.setupButtonActions()
         self.setupCheck()
+        self.setupTouchAreaFullComponent()
         self.setupViewConfiguration()
+    }
+    /**
+     Setup Tapto UIView conteiner
+     */
+    private func setupTouchAreaFullComponent() {
+        self.addTapGestureRecognizer {
+            if self.checkButton.viewState == .checked {
+                self.actionUncheck()
+            } else {
+                self.actionCheck()
+            }
+        }
     }
     /**
      Call this function when you change the images names self uncheckedImageName or checkedImageName, this function chenge images on checkButton: MLQuestionCheckButton
@@ -170,22 +183,34 @@ open class MLQuestionCheck: UIView {
         }
     }
     /**
+     Change State to Check
+     */
+    private func actionCheck() {
+        self.isChecked = true
+        self.checkButton.viewState = .checked
+        self.labelQuestion.font = self.fontChecked
+        self.didChangeState?(true)
+    }
+    /**
+     Change State to Uncheck
+     */
+    private func actionUncheck() {
+        self.isChecked = false
+        self.checkButton.viewState = .unChecked
+        self.labelQuestion.font = self.font
+        self.didChangeState?(false)
+    }
+    /**
      This method setup button actions for check and uncheck
      */
     private func setupButtonActions() {
         checkButton.didCheck = { [weak self] in
             guard let self = self else { return }
-            self.isChecked = true
-            self.checkButton.viewState = .checked
-            self.labelQuestion.font = self.fontChecked
-            self.didChangeState?(true)
+            self.actionCheck()
         }
         checkButton.didUncheck = { [weak self] in
             guard let self = self else { return }
-            self.isChecked = false
-            self.checkButton.viewState = .unChecked
-            self.labelQuestion.font = self.font
-            self.didChangeState?(false)
+            self.actionUncheck()
         }
     }
     /**

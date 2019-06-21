@@ -1,68 +1,110 @@
 {
   "warnings": [
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/Extensions/UIView+tapGesture.swift",
+      "line": 14,
+      "symbol": "UIView.AssociatedObjectKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/Extensions/UIView+tapGesture.swift",
+      "line": 15,
+      "symbol": "UIView.AssociatedObjectKeys.tapGestureRecognizer",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/Extensions/UIView+tapGesture.swift",
+      "line": 18,
+      "symbol": "UIView.Action",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/Extensions/UIView+tapGesture.swift",
+      "line": 21,
+      "symbol": "UIView.tapGestureRecognizerAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/Extensions/UIView+tapGesture.swift",
+      "line": 36,
+      "symbol": "UIView.addTapGestureRecognizer(action:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/Extensions/UIView+tapGesture.swift",
+      "line": 45,
+      "symbol": "UIView.handleTapGesture(sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
       "line": null,
       "symbol": "MLQuestionCheckButton",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
       "line": 29,
       "symbol": "MLQuestionButtonState.checked",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
       "line": 29,
       "symbol": "MLQuestionButtonState.unChecked",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLQuestionCheckButton.swift",
       "line": 32,
       "symbol": "MLQuestionCheckButton",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
       "line": 29,
       "symbol": "MLViewConfiguration.setupConstraints()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
       "line": 30,
       "symbol": "MLViewConfiguration.buildViewHierarchy()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
       "line": 31,
       "symbol": "MLViewConfiguration.configureViews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
       "line": 32,
       "symbol": "MLViewConfiguration.setupViewConfiguration()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/michel/DeviOS/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
+      "file": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck/Sources/Core/MLViewConfiguration.swift",
       "line": 66,
       "symbol": "MLViewConfiguration.setupViewConfiguration()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/michel/DeviOS/MLPods/MLQuestionCheck"
+  "source_directory": "/Volumes/MARK5_DADOS/DevAppXcode/MLPods/MLQuestionCheck"
 }
