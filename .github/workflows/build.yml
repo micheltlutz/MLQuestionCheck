@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@master
       - name: Build
         run: |
-          cd MLQuestionCheck
+#          cd MLQuestionCheck
           xcodebuild clean build -project MLQuestionCheck.xcodeproj -scheme MLQuestionCheck -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
