@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3549BB471DA389F300C63030"
-               BuildableName = "MLQuestionCheck.framework"
-               BlueprintName = "MLQuestionCheck-tvOS"
+               BlueprintIdentifier = "D000259B22BD14B7005F640D"
+               BuildableName = "MLQuestionCheckDemo.app"
+               BlueprintName = "MLQuestionCheckDemo"
+               ReferencedContainer = "container:MLQuestionCheck.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D00025B922BD14BA005F640D"
+               BuildableName = "MLQuestionCheckDemoUITests.xctest"
+               BlueprintName = "MLQuestionCheckDemoUITests"
                ReferencedContainer = "container:MLQuestionCheck.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3549BB6F1DA38AEF00C63030"
-               BuildableName = "MLQuestionCheckTests-tvOS.xctest"
-               BlueprintName = "MLQuestionCheckTests-tvOS"
+               BlueprintIdentifier = "D00025AE22BD14B9005F640D"
+               BuildableName = "MLQuestionCheckDemoTests.xctest"
+               BlueprintName = "MLQuestionCheckDemoTests"
                ReferencedContainer = "container:MLQuestionCheck.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3549BB471DA389F300C63030"
-            BuildableName = "MLQuestionCheck.framework"
-            BlueprintName = "MLQuestionCheck-tvOS"
+            BlueprintIdentifier = "D000259B22BD14B7005F640D"
+            BuildableName = "MLQuestionCheckDemo.app"
+            BlueprintName = "MLQuestionCheckDemo"
             ReferencedContainer = "container:MLQuestionCheck.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,15 +75,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3549BB471DA389F300C63030"
-            BuildableName = "MLQuestionCheck.framework"
-            BlueprintName = "MLQuestionCheck-tvOS"
+            BlueprintIdentifier = "D000259B22BD14B7005F640D"
+            BuildableName = "MLQuestionCheckDemo.app"
+            BlueprintName = "MLQuestionCheckDemo"
             ReferencedContainer = "container:MLQuestionCheck.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +94,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3549BB471DA389F300C63030"
-            BuildableName = "MLQuestionCheck.framework"
-            BlueprintName = "MLQuestionCheck-tvOS"
+            BlueprintIdentifier = "D000259B22BD14B7005F640D"
+            BuildableName = "MLQuestionCheckDemo.app"
+            BlueprintName = "MLQuestionCheckDemo"
             ReferencedContainer = "container:MLQuestionCheck.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
