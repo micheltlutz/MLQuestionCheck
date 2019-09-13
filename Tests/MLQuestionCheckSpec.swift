@@ -6,20 +6,15 @@
 //  Copyright © 2017 micheltlutz. All rights reserved.
 //
 
-import Quick
-import Nimble
+import XCTest
 @testable import MLQuestionCheck
 
-class MLQuestionCheckSpec: QuickSpec {
+class MLQuestionCheckTest: XCTest {
 
-    override func spec() {
+    func testDemo() {
+        let name = "Michel"
 
-        describe("MLQuestionCheckSpec") {
-            it("works") {
-                expect(MLQuestionCheck.name) == "MLQuestionCheck"
-            }
-        }
-
+        XCTAssertNotNil(name)
     }
 
 }
